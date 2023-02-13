@@ -1,0 +1,44 @@
+<repository>
+
+    <maven_repository>
+        <url>/users/pengrui/CODE/MavenLocal</url>
+        <username />
+        <password />
+    </maven_repository>
+
+    <projects>
+
+        <project>
+            <name>apt_annotations</name>
+            <mavenConfig>
+                <groupId>com.cnstrong.ray</groupId>
+                <artifactId>apt_annotations</artifactId>
+                <version>1.0.0</version>
+            </mavenConfig>
+            <sourcecomplier>1</sourcecomplier>
+        </project>
+
+
+        <project>
+            <name>apt_processor</name>
+            <mavenConfig>
+                <groupId>com.cnstrong.ray</groupId>
+                <artifactId>apt_processor</artifactId>
+                <version>1.0.0</version>
+            </mavenConfig>
+            <sourcecomplier>1</sourcecomplier>
+        </project>
+
+        <project>
+            <name>http_network</name>
+            <mavenConfig>
+                <groupId>com.cnstrong.ray</groupId>
+                <artifactId>http_network</artifactId>
+                <version>1.0.0</version>
+            </mavenConfig>
+            <sourcecomplier>1</sourcecomplier>
+        </project>
+
+    </projects>
+
+</repository>

@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        google()
+        jcenter()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }.setAllowInsecureProtocol(true)
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }.setAllowInsecureProtocol(true)
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }.setAllowInsecureProtocol(true)
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }.setAllowInsecureProtocol(true)
+        maven { url "https://jitpack.io" }
+        maven { url("https://gitee.com/android-ray/self-maven/raw/master") }
+    }
+}
+
+rootProject.name = "NetworkAPT"
+include ':app'
+//include ':apt_annotations'
+//include ':apt_processor'
+//include ':http_network'
+include ':anthor'

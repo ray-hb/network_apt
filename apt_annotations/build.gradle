@@ -1,0 +1,38 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'maven-publish'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            groupId = "com.ray.module"
+            artifactId = "repository_annotation"
+            version = "1.0"
+        }
+    }
+    repositories {
+        mavenLocal()
+        maven {
+            url = '/users/pengrui/CODE/Maven/self-maven'
+        }
+    }
+
+//    repositories {
+//        maven { MavenArtifactRepository repository ->
+//            repository.allowInsecureProtocol(true)
+//            repository.url("http://192.168.20.47:8081/repository/leke-snapshots/")
+//            repository.credentials {
+//                username("leke")
+//                password("leke123")
+//            }
+//        }
+//    }
+}
